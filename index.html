@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html <head>
+<title>My Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body>
+
+    <div id="topOfPage"></div>
+
+    <div class="container">
+
+        <!-- "loading" gif -->
+        <div class="modal fade" id="loadingMessage">
+            <div class="modal-dialog modal-sm text-center">
+                <img class="modal-content" src='https://media.giphy.com/media/11FuEnXyGsXFba/giphy.gif' />
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-default" style="background-color: #aaeeff !important;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"
+                        style="color: #6b7172 !important; font-family: 'Baloo Tamma 2', cursive !important;"
+                        href="javascript:showDivPage('#homeDiv')">My Website</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a style="color: #6b7172 !important;" class="nav-link"
+                                href="javascript:showDivPage('#myDivPage')">My Page</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="color: #6b7172 !important;" class="nav-link hrefMailToSupport">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- div pages -->
+
+        <div id="homeDiv" class="divPage">
+            <div class="jumbotron">
+                <h2>What is My Website?</h2>
+                <p>My Website is a web application that does great things, then does more great things, then allows you
+                    to do great things.</p>
+            </div>
+            <div>
+                <h3>Highlights</h3>
+                <ul>
+                    <li>Business logic feature</li>
+                    <li>Usability feature</li>
+                    <li>Novel feature</li>
+                    <li>Different views feature</li>
+                    <li>Great philosophy on something</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Getting Started</h3>
+                <ul>
+                    <li>Try using a great feature.</li>
+                    <li>View results in some kind of way.</li>
+                    <li>Use something to navigate.</li>
+                    <li>Click on something that does what you want.</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <div id="myDivPage" style="display: none;" class="divPage">
+            <h2 class="text-center">My Div Page</h2>
+            <br>
+            <div class="container-fluid borderBasic">
+                <h3>My Div Page</h3>
+                <br>
+                <button onclick="doStuff(); return false;" type="submit" class="btn btn-success">Check Out This
+                    Button</button>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br> <a class="btn btn-default" href="#topOfPage">back to top</a>
+        </div>
+
+        <div id="refsDiv" style="display: none;" class="divPage">
+            <h2 class="text-center">References</h2>
+            <div id="refPanels"></div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
